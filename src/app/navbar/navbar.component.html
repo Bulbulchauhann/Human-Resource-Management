@@ -1,0 +1,71 @@
+<nav class="navbar navbar-expand-df navbar-light bg-default mb-0 ">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <b>HRMS</b>
+        <!-- <img src="assets/images/hrmlogo.png" alt="Angular Project" /> -->
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+        (click)="toggleNavbarCollapsing()"
+        aria-controls="navbarCollapse"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        [class.collapse]="navbarCollapsed"
+        id="navbarCollapse"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link bg-basic" routerLink="/" >Home</a>
+          </li>
+          <li class="nav-item  bg-basic">
+            <a class="nav-link" routerLink="/dashboard" routerLinkActive="active"
+              ><i class="fa-solid fa-people-roof"></i> Dashboard</a
+            >
+          </li>
+          <li class="nav-item bg-basic">
+            <a class="nav-link " routerLink="/employeeform" routerLinkActive="active"
+              ><i class="fa-solid fa-circle-plus"></i> Employee</a
+            >
+          </li>
+  
+          <!-- <li class="nav-item bg-basic">
+            <a class="nav-link " routerLink="/contact-us" routerLinkActive="active"
+              >Contact Us</a
+            >
+          </li> -->
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item bg-basic">
+            <a class="nav-link" routerLink="/login" routerLinkActive="active"
+              ><i class="fa-solid fa-user"></i> Login</a
+            >
+          </li>
+  
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item bg-basic">
+            <a class="nav-link" routerLink="/signup" routerLinkActive="active"
+              ><i class="fa-solid fa-user"></i>SignUp</a
+            >
+          </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item bg-basic">
+            <!-- <a class="nav-link" (click)="logout()">Logout</a> -->
+            <button class="btn nav-link" (click)="logout()" ><i class="fas fa-sign-out"></i> Logout</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Welcome To Employee Management System</h1>
+  <!-- <h5>Designed and Developed by-<br><br>Bulbul Singh<br><br>ADIT-IBM(NSTI-BENGALURU)</h5> -->
